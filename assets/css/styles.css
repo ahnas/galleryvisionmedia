@@ -1,36 +1,5 @@
 @charset "UTF-8";
 
-/* ---------------------------------------------------------
-    * Name: Davies - Personal Portfolio HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Core CSS
-
-    * Components
-        * Blog
-        * Layout
-        * Header
-        * Accordion
-        * Animation
-        * Box Icon
-        * Button
-        * Carousel
-        * Form
-        * Hover
-        * Nice Select
-        * Popup
-        * Section
-        * Slider
-        * Tabs
-        * Testimonial
-        * Widget
-        * Footer
-
- ------------------------------------------------------------------------------ */
 /*--------- Abstracts variable ---------- */
 :root {
   --white: #ffffff;
@@ -90,39 +59,6 @@
   --primary-rgb: 225, 67, 146;
 }
 
-/*------------ Core CSS ---------------- */
-/* ---------------------------------------------------------
-    * Name: Davies - Personal Portfolio HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Core CSS
-
-    * Components
-        * Blog
-        * Layout
-        * Header
-        * Accordion
-        * Animation
-        * Box Icon
-        * Button
-        * Carousel
-        * Form
-        * Hover
-        * Nice Select
-        * Popup
-        * Section
-        * Slider
-        * Tabs
-        * Testimonial
-        * Widget
-        * Footer
-
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 html,
 body,
 div,
@@ -632,40 +568,6 @@ p {
   width: max-content !important;
 }
 
-/* ---------------------------------------------------------
-    * Name: Davies - Personal Portfolio HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Core CSS
-
-    * Components
-        * Blog
-        * Layout
-        * Header
-        * Accordion
-        * Animation
-        * Box Icon
-        * Button
-        * Carousel
-        * Form
-        * Hover
-        * Nice Select
-        * Popup
-        * Section
-        * Slider
-        * Tabs
-        * Testimonial
-        * Widget
-        * Footer
-
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
-/* Typography
-============================================================== */
 /* Heading */
 h1,
 h2,
@@ -927,41 +829,7 @@ h6,
   }
 }
 
-/* ---------------------------------------------------------
-    * Name: Davies - Personal Portfolio HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
 
-	* Abstracts variable
-
-    * Core CSS
-
-    * Components
-        * Blog
-        * Layout
-        * Header
-        * Accordion
-        * Animation
-        * Box Icon
-        * Button
-        * Carousel
-        * Form
-        * Hover
-        * Nice Select
-        * Popup
-        * Section
-        * Slider
-        * Tabs
-        * Testimonial
-        * Widget
-        * Footer
-
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
-/* General
-============================================================== */
-/* Margin */
 .mb-2 {
   margin-bottom: 2px !important;
 }
@@ -1285,40 +1153,6 @@ h6,
   }
 }
 
-/*------------ Component ---------------- */
-/*------------ Layout ---------------- */
-/* ---------------------------------------------------------
-    * Name: Davies - Personal Portfolio HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Core CSS
-
-    * Components
-        * Blog
-        * Layout
-        * Header
-        * Accordion
-        * Animation
-        * Box Icon
-        * Button
-        * Carousel
-        * Form
-        * Hover
-        * Nice Select
-        * Popup
-        * Section
-        * Slider
-        * Tabs
-        * Testimonial
-        * Widget
-        * Footer
-
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 .tf-grid-layout {
   display: grid;
   column-gap: 24px;
@@ -1520,39 +1354,6 @@ h6,
   max-width: 100%;
 }
 
-/*------------ Header ---------------- */
-/* ---------------------------------------------------------
-    * Name: Davies - Personal Portfolio HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Core CSS
-
-    * Components
-        * Blog
-        * Layout
-        * Header
-        * Accordion
-        * Animation
-        * Box Icon
-        * Button
-        * Carousel
-        * Form
-        * Hover
-        * Nice Select
-        * Popup
-        * Section
-        * Slider
-        * Tabs
-        * Testimonial
-        * Widget
-        * Footer
-
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 header {
   position: sticky;
   top: 0;
@@ -2218,39 +2019,6 @@ header.header-sticky {
   padding: 4px 16px;
 }
 
-/*------------ Blog ---------------- */
-/* ---------------------------------------------------------
-    * Name: Davies - Personal Portfolio HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Core CSS
-
-    * Components
-        * Blog
-        * Layout
-        * Header
-        * Accordion
-        * Animation
-        * Box Icon
-        * Button
-        * Carousel
-        * Form
-        * Hover
-        * Nice Select
-        * Popup
-        * Section
-        * Slider
-        * Tabs
-        * Testimonial
-        * Widget
-        * Footer
-
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 .article-blog {
   border-radius: 12px;
   overflow: hidden;
@@ -2589,39 +2357,6 @@ header.header-sticky {
   height: 100px;
 }
 
-/*------------ Element ---------------- */
-/* ---------------------------------------------------------
-    * Name: Davies - Personal Portfolio HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Core CSS
-
-    * Components
-        * Blog
-        * Layout
-        * Header
-        * Accordion
-        * Animation
-        * Box Icon
-        * Button
-        * Carousel
-        * Form
-        * Hover
-        * Nice Select
-        * Popup
-        * Section
-        * Slider
-        * Tabs
-        * Testimonial
-        * Widget
-        * Footer
-
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 @keyframes sliderShape {
 
   0%,
@@ -2894,38 +2629,6 @@ header.header-sticky {
   -webkit-backface-visibility: hidden;
 }
 
-/* ---------------------------------------------------------
-    * Name: Davies - Personal Portfolio HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Core CSS
-
-    * Components
-        * Blog
-        * Layout
-        * Header
-        * Accordion
-        * Animation
-        * Box Icon
-        * Button
-        * Carousel
-        * Form
-        * Hover
-        * Nice Select
-        * Popup
-        * Section
-        * Slider
-        * Tabs
-        * Testimonial
-        * Widget
-        * Footer
-
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 .hover-img .img-style {
   overflow: hidden;
 }
@@ -3265,38 +2968,6 @@ header.header-sticky {
   }
 }
 
-/* ---------------------------------------------------------
-    * Name: Davies - Personal Portfolio HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Core CSS
-
-    * Components
-        * Blog
-        * Layout
-        * Header
-        * Accordion
-        * Animation
-        * Box Icon
-        * Button
-        * Carousel
-        * Form
-        * Hover
-        * Nice Select
-        * Popup
-        * Section
-        * Slider
-        * Tabs
-        * Testimonial
-        * Widget
-        * Footer
-
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 .box-icon {
   display: flex;
   align-items: center;
@@ -3501,39 +3172,6 @@ header.header-sticky {
   gap: 4px;
 }
 
-/* ---------------------------------------------------------
-    * Name: Davies - Personal Portfolio HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Core CSS
-
-    * Components
-        * Blog
-        * Layout
-        * Header
-        * Accordion
-        * Animation
-        * Box Icon
-        * Button
-        * Carousel
-        * Form
-        * Hover
-        * Nice Select
-        * Popup
-        * Section
-        * Slider
-        * Tabs
-        * Testimonial
-        * Widget
-        * Footer
-
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
-/*-- CSS Boostrap --*/
 .offcanvas {
   border: none !important;
   color: var(--white);
@@ -3869,38 +3507,6 @@ header.header-sticky {
   }
 }
 
-/* ---------------------------------------------------------
-    * Name: Davies - Personal Portfolio HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Core CSS
-
-    * Components
-        * Blog
-        * Layout
-        * Header
-        * Accordion
-        * Animation
-        * Box Icon
-        * Button
-        * Carousel
-        * Form
-        * Hover
-        * Nice Select
-        * Popup
-        * Section
-        * Slider
-        * Tabs
-        * Testimonial
-        * Widget
-        * Footer
-
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 .flat-animate-tab .tab-content {
   position: relative;
 }
@@ -3982,38 +3588,6 @@ header.header-sticky {
   }
 }
 
-/* ---------------------------------------------------------
-    * Name: Davies - Personal Portfolio HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Core CSS
-
-    * Components
-        * Blog
-        * Layout
-        * Header
-        * Accordion
-        * Animation
-        * Box Icon
-        * Button
-        * Carousel
-        * Form
-        * Hover
-        * Nice Select
-        * Popup
-        * Section
-        * Slider
-        * Tabs
-        * Testimonial
-        * Widget
-        * Footer
-
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 form {
   position: relative;
   z-index: 30;
@@ -4347,38 +3921,6 @@ select option {
   transform: translateY(-50%) rotateY(180deg);
 }
 
-/* ---------------------------------------------------------
-    * Name: Davies - Personal Portfolio HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Core CSS
-
-    * Components
-        * Blog
-        * Layout
-        * Header
-        * Accordion
-        * Animation
-        * Box Icon
-        * Button
-        * Carousel
-        * Form
-        * Hover
-        * Nice Select
-        * Popup
-        * Section
-        * Slider
-        * Tabs
-        * Testimonial
-        * Widget
-        * Footer
-
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 .tf-btn {
   display: inline-flex;
   align-items: center;
@@ -4730,38 +4272,6 @@ button.animate-btn::after,
   }
 }
 
-/* ---------------------------------------------------------
-    * Name: Davies - Personal Portfolio HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Core CSS
-
-    * Components
-        * Blog
-        * Layout
-        * Header
-        * Accordion
-        * Animation
-        * Box Icon
-        * Button
-        * Carousel
-        * Form
-        * Hover
-        * Nice Select
-        * Popup
-        * Section
-        * Slider
-        * Tabs
-        * Testimonial
-        * Widget
-        * Footer
-
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 .tf-list {
   display: flex;
   gap: 4px;
@@ -6395,38 +5905,6 @@ button.animate-btn::after,
   }
 }
 
-/* ---------------------------------------------------------
-    * Name: Davies - Personal Portfolio HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Core CSS
-
-    * Components
-        * Blog
-        * Layout
-        * Header
-        * Accordion
-        * Animation
-        * Box Icon
-        * Button
-        * Carousel
-        * Form
-        * Hover
-        * Nice Select
-        * Popup
-        * Section
-        * Slider
-        * Tabs
-        * Testimonial
-        * Widget
-        * Footer
-
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 .sw-dot-default {
   margin-top: 24px;
   display: inline-flex;
@@ -6686,38 +6164,6 @@ button.animate-btn::after,
   transform: rotateX(-45deg) translateY(120px) translateZ(-120px);
 }
 
-/* ---------------------------------------------------------
-    * Name: Davies - Personal Portfolio HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Core CSS
-
-    * Components
-        * Blog
-        * Layout
-        * Header
-        * Accordion
-        * Animation
-        * Box Icon
-        * Button
-        * Carousel
-        * Form
-        * Hover
-        * Nice Select
-        * Popup
-        * Section
-        * Slider
-        * Tabs
-        * Testimonial
-        * Widget
-        * Footer
-
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 .testimonial-v01 {
   padding: 48px;
   border: 1px solid var(--white-16);
@@ -6774,38 +6220,6 @@ button.animate-btn::after,
   }
 }
 
-/* ---------------------------------------------------------
-    * Name: Davies - Personal Portfolio HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Core CSS
-
-    * Components
-        * Blog
-        * Layout
-        * Header
-        * Accordion
-        * Animation
-        * Box Icon
-        * Button
-        * Carousel
-        * Form
-        * Hover
-        * Nice Select
-        * Popup
-        * Section
-        * Slider
-        * Tabs
-        * Testimonial
-        * Widget
-        * Footer
-
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 .group-btn {
   display: flex;
   align-items: center;
@@ -7629,38 +7043,6 @@ button.animate-btn::after,
   color: var(--primary);
 }
 
-/* ---------------------------------------------------------
-    * Name: Davies - Personal Portfolio HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Core CSS
-
-    * Components
-        * Blog
-        * Layout
-        * Header
-        * Accordion
-        * Animation
-        * Box Icon
-        * Button
-        * Carousel
-        * Form
-        * Hover
-        * Nice Select
-        * Popup
-        * Section
-        * Slider
-        * Tabs
-        * Testimonial
-        * Widget
-        * Footer
-
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 .nice-select {
   -webkit-tap-highlight-color: transparent;
   background-color: #fff;
@@ -7942,38 +7324,6 @@ button.animate-btn::after,
   transform: rotate(180deg);
 }
 
-/* ---------------------------------------------------------
-    * Name: Davies - Personal Portfolio HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Core CSS
-
-    * Components
-        * Blog
-        * Layout
-        * Header
-        * Accordion
-        * Animation
-        * Box Icon
-        * Button
-        * Carousel
-        * Form
-        * Hover
-        * Nice Select
-        * Popup
-        * Section
-        * Slider
-        * Tabs
-        * Testimonial
-        * Widget
-        * Footer
-
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 .ic-accordion-custom {
   position: relative;
   width: 16px;
@@ -8174,39 +7524,6 @@ button.animate-btn::after,
   gap: 24px;
 }
 
-/*------------ Footer ---------------- */
-/* ---------------------------------------------------------
-    * Name: Davies - Personal Portfolio HTML Template
-    * Version: 1.0.0
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
-
-	* Abstracts variable
-
-    * Core CSS
-
-    * Components
-        * Blog
-        * Layout
-        * Header
-        * Accordion
-        * Animation
-        * Box Icon
-        * Button
-        * Carousel
-        * Form
-        * Hover
-        * Nice Select
-        * Popup
-        * Section
-        * Slider
-        * Tabs
-        * Testimonial
-        * Widget
-        * Footer
-
- ------------------------------------------------------------------------------ */
-/*--------- Abstracts variable ---------- */
 .tf-footer .footer-inner {
   padding-top: 40px;
   padding-bottom: 40px;
