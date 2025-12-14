@@ -4,7 +4,7 @@
 :root {
   --white: #ffffff;
   --black: #000000;
-  --primary: #07C42C;
+  --primary: #ed1c24;
   --primary-rgb: 7, 196, 44;
   --white-50: #FFFFFF80;
   --white-64: #FFFFFFA3;
@@ -21,7 +21,7 @@
 }
 
 [data-color-primary=color-primary-1] {
-  --primary: #07C42C;
+  --primary: #ed1c24;
 }
 
 [data-color-primary=color-primary-2] {
@@ -6985,7 +6985,7 @@ button.animate-btn::after,
 }
 
 .settings-color .choose-item:nth-child(1) {
-  background: #07C42C;
+  background: #ed1c24;
 }
 
 .settings-color .choose-item:nth-child(2) {
@@ -7631,4 +7631,7 @@ button.animate-btn::after,
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+.center-header {
+  justify-items: anchor-center;
+  align-content: center;
+}
