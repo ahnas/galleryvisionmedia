@@ -1480,6 +1480,7 @@ h6,
 /*--------- Abstracts variable ---------- */
 header {
   position: sticky;
+  top: 0;
   z-index: 100;
   transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
