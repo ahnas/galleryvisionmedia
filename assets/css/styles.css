@@ -1543,6 +1543,7 @@ header.header-sticky {
   display: flex;
   align-items: center;
   gap: 6px;
+  place-self: anchor-center;
 }
 
 .btn-mobile-menu .icon {
