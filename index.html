@@ -1648,7 +1648,8 @@
                             <div class="col-left">
                                 <a href="index.html" class="logo-custom">
                                     <div class="logo-site-sv">
-                                        <img src="assets/images/logonobg-png.png" width="48px" height="48px" alt="Gallery Vision Media Logo">
+                                        <img src="assets/images/logonobg-png.png" width="48px" height="48px"
+                                            alt="Gallery Vision Media Logo">
                                     </div>
                                     <span class="line-vertical left"></span>
                                     <span class="line-vertical right"></span>
@@ -1996,6 +1997,46 @@
     <script src="assets/js/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
     <script src="assets/js/gsapAnimation.js"></script>
+
+    <script>
+        // Header scroll effect - add black background when scrolled
+        (function () {
+            const header = document.querySelector('header.tf-header');
+            if (!header) return;
+
+            let lastScrollTop = 0;
+            const scrollThreshold = 50; // Start showing background after 50px scroll
+
+            function handleScroll() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                if (scrollTop > scrollThreshold) {
+                    // Scrolled down - add black background
+                    header.classList.add('header-sticky');
+                } else {
+                    // At top - remove black background (transparent)
+                    header.classList.remove('header-sticky');
+                }
+
+                lastScrollTop = scrollTop;
+            }
+
+            // Initial check
+            handleScroll();
+
+            // Throttle scroll event for better performance
+            let ticking = false;
+            window.addEventListener('scroll', function () {
+                if (!ticking) {
+                    window.requestAnimationFrame(function () {
+                        handleScroll();
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            });
+        })();
+    </script>
 
     <script src="assets/js/main.js"></script>
 </body>
