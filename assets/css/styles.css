@@ -4747,6 +4747,56 @@ button.animate-btn::after,
   }
 }
 
+/* About Me Text Content Styling */
+.section-about-me .about-text-content {
+  max-width: 100%;
+}
+
+.section-about-me .about-text-content .about-intro,
+.section-about-me .about-text-content .about-description {
+  font-size: clamp(14px, 1.5vw, 18px);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 20px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+.section-about-me .about-text-content .about-intro {
+  font-size: clamp(15px, 1.6vw, 19px);
+  font-weight: 400;
+  margin-bottom: 24px;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.section-about-me .about-text-content .about-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.4);
+  text-underline-offset: 4px;
+  transition: all 0.3s ease;
+  font-weight: 400;
+}
+
+.section-about-me .about-text-content .about-link:hover {
+  color: rgba(255, 255, 255, 1);
+  text-decoration-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 767px) {
+
+  .section-about-me .about-text-content .about-intro,
+  .section-about-me .about-text-content .about-description {
+    font-size: clamp(14px, 2vw, 16px);
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .section-about-me .about-text-content .about-intro {
+    margin-bottom: 20px;
+  }
+}
+
 .experience-list {
   display: grid;
   gap: 16px;
