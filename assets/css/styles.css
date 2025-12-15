@@ -1348,9 +1348,9 @@ h6,
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-  width: 1326px;
+  padding-right: 30px;
+  padding-left: 30px;
+  /* width: 1326px; */
   max-width: 100%;
 }
 
