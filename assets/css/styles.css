@@ -637,13 +637,13 @@ h6,
 }
 
 .text-display-1 {
-  font-size: clamp(60px, 8vw, 96px);
-  line-height: clamp(60px, 8vw, 96px);
+  font-size: clamp(40px, 8vw, 40px);
+  line-height: clamp(20px, 8vw, 20px);
 }
 
 .text-display-2 {
-  font-size: clamp(32px, 6vw, 72px);
-  line-height: clamp(40px, 6.5vw, 80px);
+  font-size: clamp(32px, 6vw, 60px);
+  line-height: clamp(40px, 6.5vw, 60px);
 }
 
 .text-body-1 {
@@ -1562,7 +1562,7 @@ header.header-sticky {
   width: 100%;
   pointer-events: none;
   overflow: hidden;
-  line-height: clamp(68px, 9vw, 108px);
+  line-height: clamp(40px, 9vw, 40px);
 }
 
 .mb-menu-link>* {
@@ -4283,7 +4283,7 @@ button.animate-btn::after,
 }
 
 .s-header {
-  padding-bottom: 88px;
+  padding-bottom: 20px;
   display: flex;
   align-items: end;
   justify-content: space-between;
@@ -4293,7 +4293,7 @@ button.animate-btn::after,
 
 @media (max-width: 1439px) {
   .s-header {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
 }
 
@@ -4693,13 +4693,15 @@ button.animate-btn::after,
 .section-about-me .davies-video {
   position: relative;
   display: flex;
+  overflow: hidden;
 }
 
 .section-about-me .davies-video .video {
   background-blend-mode: luminosity;
-  max-height: 666px;
+  max-height: 520px;
   aspect-ratio: 0.8003003003;
-  filter: grayscale(100%);
+  filter: grayscale(100%) blur(4px);
+  transform: scale(1.05);
 }
 
 .section-about-me .davies-video .overlay {
@@ -4715,6 +4717,28 @@ button.animate-btn::after,
 
 .section-about-me .davies-video .overlay.mark-2 {
   background: linear-gradient(180deg, #000 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, #000 100%);
+}
+
+.section-about-me .davies-video .davies-video-text {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 32px;
+}
+
+.section-about-me .davies-video .davies-video-text h3 {
+  max-width: 260px;
+}
+
+@media (max-width: 575px) {
+  .section-about-me .davies-video .davies-video-text {
+    padding: 24px 16px;
+  }
 }
 
 .section-about-me .col-right .br-line {
@@ -7752,4 +7776,49 @@ button.animate-btn::after,
 .center-header {
   justify-items: anchor-center;
   align-content: center;
+}
+
+/* Contact Card - CTA section */
+.contact-card {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-card-inner {
+  width: 100%;
+  max-width: 640px;
+  border-radius: 20px;
+  padding: 32px 32px 28px;
+  border: 1px solid var(--white-16);
+  background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.06), transparent 55%),
+    rgba(8, 8, 8, 0.85);
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.55);
+}
+
+.contact-card-inner .mini-title {
+  margin-bottom: 8px;
+}
+
+.contact-card-inner h3 {
+  margin-bottom: 16px;
+}
+
+.contact-info-list {
+  display: grid;
+  gap: 12px;
+}
+
+.contact-info-item a {
+  text-decoration: none;
+}
+
+.contact-info-item a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 575px) {
+  .contact-card-inner {
+    padding: 24px 20px 22px;
+    border-radius: 16px;
+  }
 }
