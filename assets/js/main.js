@@ -225,6 +225,38 @@
             }
         });
     };
+    /* Service Hover Description
+    -------------------------------------------------------------------------*/
+    var serviceHoverDescription = () => {
+        const $serviceItems = $(".service-item");
+        const $descriptionBox = $(".service-description");
+        const $descriptionTitle = $(".service-desc-title");
+        const $descriptionText = $(".service-desc-text");
+
+        if ($serviceItems.length === 0 || $descriptionBox.length === 0) return;
+
+        $serviceItems.on("mouseenter", function () {
+            const $item = $(this);
+            const description = $item.data("description");
+            // Extract title text (everything after the // span)
+            const title = $item.clone().children().remove().end().text().trim();
+            
+            if (description) {
+                $descriptionTitle.text(title);
+                $descriptionText.text(description);
+                $descriptionBox.addClass("active");
+            }
+        });
+
+        $serviceItems.on("mouseleave", function () {
+            $descriptionBox.removeClass("active");
+        });
+
+        // Hide description when mouse leaves the service list area
+        $(".service-list").on("mouseleave", function () {
+            $descriptionBox.removeClass("active");
+        });
+    };
 
     // Dom Ready
     $(function () {
@@ -236,5 +268,6 @@
         counterOdo();
         openMbMenu();
         clickActive();
+        serviceHoverDescription();
     });
 })(jQuery);

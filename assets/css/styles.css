@@ -945,7 +945,6 @@ h6,
 /* Spacing */
 .flat-spacing {
   padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 @media (max-width: 1439px) {
@@ -5838,18 +5837,85 @@ button.animate-btn::after,
   object-fit: cover;
 }
 
+/* Service Description Styling */
+.wg-service-2 .center {
+  position: relative;
+}
+
+.wg-service-2 .service-description {
+  padding: 24px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.05) inset;
+}
+
+.wg-service-2 .service-description.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.wg-service-2 .service-desc-title {
+  color: var(--primary);
+  font-size: clamp(18px, 1.5vw, 22px);
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+}
+
+.wg-service-2 .service-desc-text {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(14px, 1.2vw, 16px);
+  line-height: 1.7;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.wg-service-2 .service-list .service-item {
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+  position: relative;
+}
+
+.wg-service-2 .service-list .service-item:hover {
+  color: var(--primary);
+  transform: translateX(4px);
+}
+
 @media (min-width: 1200px) {
+  .wg-service-2 .service-list {
+    position: relative;
+  }
+
   .wg-service-2 .image-2 {
-    width: 212px;
+    width: 350px;
+    max-width: 350px;
     position: absolute;
-    left: calc(100% - 212px);
-    top: 50%;
-    transform: translateY(-50%);
+    left: 100%;
+    margin-left: 40px;
+    top: 0;
     display: block;
   }
 
   .wg-service-2 .image-simu {
     display: block;
+  }
+}
+
+@media (min-width: 1440px) {
+  .wg-service-2 .image-2 {
+    width: 400px;
+    max-width: 400px;
+    margin-left: 60px;
+    align-self: anchor-center;
   }
 }
 
