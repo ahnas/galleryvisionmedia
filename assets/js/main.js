@@ -1,13 +1,10 @@
 /**
  * Go Top
  * Infinite Slide
- * Update Clock
- * Cursor Trail
  * Counter
- * Scroll Link
- * Setting Color
  * Open Menu
  * Click Active
+ * Service Hover Description
  */
 
 (function ($) {
@@ -61,91 +58,6 @@
             });
         }
     };
-    /* Update Clock
-    -------------------------------------------------------------------------*/
-    var updateClock = () => {
-        function startClocks(selector = ".clock") {
-            function updateClock() {
-                const now = new Date();
-                const timeString = now.toLocaleTimeString("en-GB");
-                document.querySelectorAll(selector).forEach((el) => {
-                    el.textContent = timeString;
-                });
-            }
-            updateClock();
-            setInterval(updateClock, 1000);
-        }
-
-        startClocks(".clock");
-    };
-    /* Cursor Trail
-    -------------------------------------------------------------------------*/
-    // var cursorTrail = () => {
-    //     const canvas = document.getElementById("trail");
-    //     const ctx = canvas.getContext("2d");
-    //     let w = window.innerWidth,
-    //         h = window.innerHeight;
-    //     canvas.width = w;
-    //     canvas.height = h;
-
-    //     let points = [];
-    //     let ripples = [];
-
-    //     window.addEventListener("resize", () => {
-    //         w = window.innerWidth;
-    //         h = window.innerHeight;
-    //         canvas.width = w;
-    //         canvas.height = h;
-    //     });
-
-    //     window.addEventListener("mousemove", (e) => {
-    //         points.push({ x: e.clientX, y: e.clientY });
-    //         if (points.length > 10) points.shift();
-    //     });
-
-    //     window.addEventListener("click", (e) => {
-    //         ripples.push({
-    //             x: e.clientX,
-    //             y: e.clientY,
-    //             radius: 0,
-    //             alpha: 1,
-    //         });
-    //     });
-
-    //     function draw() {
-    //         ctx.clearRect(0, 0, w, h);
-
-    //         if (points.length > 1) {
-    //             ctx.beginPath();
-    //             ctx.moveTo(points[0].x, points[0].y);
-    //             for (let i = 1; i < points.length; i++) {
-    //                 ctx.lineTo(points[i].x, points[i].y);
-    //             }
-    //             let last = points[points.length - 1];
-    //             let grad = ctx.createLinearGradient(points[0].x, points[0].y, last.x, last.y);
-    //             grad.addColorStop(0, "black");
-    //             grad.addColorStop(1, "white");
-    //             ctx.strokeStyle = grad;
-    //             ctx.lineWidth = 3;
-    //             ctx.lineCap = "round";
-    //             ctx.stroke();
-    //         }
-
-    //         ripples.forEach((r, i) => {
-    //             ctx.beginPath();
-    //             ctx.arc(r.x, r.y, r.radius, 0, Math.PI * 2);
-    //             ctx.strokeStyle = `rgba(255,255,255,${r.alpha})`;
-    //             ctx.lineWidth = 2;
-    //             ctx.stroke();
-    //             r.radius += 1;
-    //             r.alpha -= 0.02;
-    //         });
-    //         ripples = ripples.filter((r) => r.alpha > 0);
-
-    //         requestAnimationFrame(draw);
-    //     }
-    //     draw();
-    // };
     /* Counter Odo
     -------------------------------------------------------------------------*/
     var counterOdo = () => {
@@ -169,35 +81,6 @@
                     }
                 });
             });
-        }
-    };
-    /* Setting Color
-    -------------------------------------------------------------------------*/
-    const settingColor = () => {
-        if (!$(".settings-color").length) return;
-
-        const COLOR_KEY = "selectedColorIndex";
-
-        const savedIndex = localStorage.getItem(COLOR_KEY);
-
-        if (savedIndex !== null) {
-            setColor(savedIndex);
-            setActiveItem(savedIndex - 1);
-        }
-
-        $(".choose-item").on("click", function () {
-            const index = $(this).index();
-            setColor(index + 1);
-            setActiveItem(index);
-            localStorage.setItem(COLOR_KEY, index + 1);
-        });
-
-        function setColor(index) {
-            $("body").attr("data-color-primary", "color-primary-" + index);
-        }
-
-        function setActiveItem(index) {
-            $(".choose-item").removeClass("active").eq(index).addClass("active");
         }
     };
     /* Open Menu
@@ -261,10 +144,7 @@
     // Dom Ready
     $(function () {
         infiniteSlide();
-        updateClock();
-        // cursorTrail();
         goTop();
-        settingColor();
         counterOdo();
         openMbMenu();
         clickActive();
