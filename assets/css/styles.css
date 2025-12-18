@@ -1605,14 +1605,12 @@ header.header-sticky {
 
 @media (min-width: 576px) {
   .mb-menu-link:hover .text {
-    color: rgba(255, 255, 255, 0.6392156863);
-    filter: blur(12px);
+    color: var(--primary);
   }
 
   .mb-menu-link:hover .infiniteSlide_text_main {
-    opacity: 1;
-    visibility: visible;
-    top: 50%;
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -3939,6 +3937,7 @@ select option {
   border: 1px solid var(--white);
   position: relative;
   overflow: hidden;
+  background: var(--primary);
 }
 
 .tf-btn::before {
