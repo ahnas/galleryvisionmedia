@@ -4282,7 +4282,7 @@ button.animate-btn::after,
 }
 
 .s-header {
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   display: flex;
   align-items: end;
   justify-content: space-between;
