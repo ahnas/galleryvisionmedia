@@ -6966,7 +6966,12 @@ button.animate-btn::after,
 }
 
 .wg-plan .benefit-list {
-  gap: 16px;
+  gap: 6px;
+}
+
+.wg-plan .benefit-list li:not(.benefit_title) {
+  font-size: 13px;
+  line-height: 1.4;
 }
 
 .wg-plan .benefit-list li:not(.benefit_title) span {
