@@ -6666,7 +6666,7 @@ button.animate-btn::after,
 }
 
 .wg-process .img-icon {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .wg-process .title {
@@ -6681,7 +6681,7 @@ button.animate-btn::after,
 
 .wg-process .bot {
   display: flex;
-  align-items: end;
+  align-items: center;
   gap: 24px;
 }
 
