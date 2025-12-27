@@ -6365,7 +6365,6 @@ button.animate-btn::after,
 @media (min-width: 576px) and (max-width: 1199px) {
   .wg-service-2 .desc {
     margin-bottom: 32px;
-    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     display: -webkit-box;
     overflow: hidden;
@@ -6812,7 +6811,6 @@ button.animate-btn::after,
 
 @media (min-width: 992px) {
   .wg-process .desc {
-    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     display: -webkit-box;
     overflow: hidden;
@@ -7415,6 +7413,76 @@ button.animate-btn::after,
 @media (min-width: 992px) {
   #goTop {
     right: 40px;
+  }
+}
+
+/* WhatsApp Sticky Button */
+#whatsappBtn,
+.whatsapp-sticky-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 70px;
+  width: 45px;
+  height: 45px;
+  background: #25D366;
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0px 4px 20px 0px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+#whatsappBtn svg,
+.whatsapp-sticky-btn svg {
+  width: 28px;
+  height: 28px;
+  fill: var(--white);
+}
+
+#whatsappBtn:hover,
+.whatsapp-sticky-btn:hover {
+  background: #20BA5A;
+  box-shadow: 0px 6px 24px 0px rgba(37, 211, 102, 0.6);
+  transform: scale(1.1);
+}
+
+#whatsappBtn:active,
+.whatsapp-sticky-btn:active {
+  transform: scale(0.95);
+}
+
+@media (min-width: 992px) {
+
+  #whatsappBtn,
+  .whatsapp-sticky-btn {
+    right: 90px;
+    bottom: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+
+  #whatsappBtn,
+  .whatsapp-sticky-btn {
+    right: 20px;
+    bottom: 100px;
+    width: 50px;
+    height: 50px;
+  }
+
+  #whatsappBtn svg,
+  .whatsapp-sticky-btn svg {
+    width: 24px;
+    height: 24px;
   }
 }
 
