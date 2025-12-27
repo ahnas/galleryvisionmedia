@@ -234,20 +234,23 @@ window.onload = function () {
             asNavFor: ".slick-nav",
             infinite: true,
             autoplay: true,
-            autoplaySpeed: 2000,
+            autoplaySpeed: 3000,
+            pauseOnHover: false,
+            pauseOnFocus: false,
         });
 
         const $nav = $(".slick-nav").slick({
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 1,
             asNavFor: ".slick-for",
             vertical: true,
             verticalSwiping: true,
-            centerMode: true,
+            centerMode: false,
             arrows: false,
             dots: false,
             infinite: true,
             focusOnSelect: true,
+            adaptiveHeight: false,
         });
 
         $(".section-selected-work .nav-prev-swiper").on("click", function () {

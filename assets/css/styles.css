@@ -5718,6 +5718,39 @@ button.animate-btn::after,
   margin-bottom: 35px;
 }
 
+/* Ensure slick-nav container and parent don't clip items vertically */
+.section-selected-work .position-relative {
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+  height: auto !important;
+  width: 100% !important;
+}
+
+.section-selected-work .col-left {
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+  width: 100% !important;
+}
+
+/* Ensure all 4 slick slides are visible and properly spaced */
+.section-selected-work .slick-nav .slick-slide {
+  height: auto !important;
+  min-height: auto !important;
+  padding: 8px 0;
+  display: flex !important;
+  align-items: center;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Prevent horizontal scroll on slick slider containers */
+.section-selected-work .slick-nav,
+.section-selected-work .slick-nav .slick-list,
+.section-selected-work .slick-nav .slick-track {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
 .section-selected-work .content-wrap-2 {
   position: relative;
   z-index: 2;
@@ -6585,37 +6618,69 @@ button.animate-btn::after,
 .slick-list {
   padding: 0 !important;
   /* xóa padding auto */
+  overflow: hidden !important;
+}
+
+/* Ensure slick-nav container shows all items vertically but prevents horizontal scroll */
+.section-selected-work .slick-nav .slick-list {
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+  height: auto !important;
+  width: 100% !important;
+}
+
+.section-selected-work .slick-nav .slick-track {
+  display: flex !important;
+  flex-direction: column !important;
+  height: auto !important;
+  width: 100% !important;
+  transform: none !important;
 }
 
 .slick-nav .slick-slide {
   border: 0;
 }
 
+/* Default: all items visible with blurred color */
 .slick-nav .slick-slide .text-slide {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  color: var(--white-32);
+  -webkit-transition: color 0.3s ease, opacity 0.3s ease;
+  -moz-transition: color 0.3s ease, opacity 0.3s ease;
+  -ms-transition: color 0.3s ease, opacity 0.3s ease;
+  -o-transition: color 0.3s ease, opacity 0.3s ease;
+  transition: color 0.3s ease, opacity 0.3s ease;
 }
 
-.slick-nav .slick-slide:not(.slick-center) .text-slide {
+/* Active/current item: white color */
+.slick-nav .slick-slide.slick-current .text-slide,
+.slick-nav .slick-slide.slick-center .text-slide {
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* Non-active items: blurred/muted color */
+.slick-nav .slick-slide:not(.slick-current):not(.slick-center) .text-slide {
   color: var(--white-32);
+  opacity: 0.6;
 }
 
 .slick-nav {
   perspective: 1000px;
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+  width: 100% !important;
 }
 
 .slick-nav .slick-slide {
-  transition: transform 0.6s, opacity 0.6s;
-  transform-origin: center center;
-  opacity: 0.4;
-  transform: rotateX(0deg) translateZ(0px);
+  transition: opacity 0.3s ease;
+  transform: none !important;
+  opacity: 1;
+  visibility: visible !important;
 }
 
+/* Remove all 3D transforms to keep all items visible */
 .slick-nav .slick-slide:not(.slick-current) {
-  transform: rotateX(45deg) translateY(-120px) translateZ(-120px);
+  transform: none !important;
 }
 
 .slick-nav .slick-current {
@@ -6623,11 +6688,11 @@ button.animate-btn::after,
 }
 
 .slick-nav .slick-current+.slick-slide {
-  transform: rotateX(45deg) translateY(-120px) translateZ(-120px);
+  transform: none !important;
 }
 
-.slick-nav .slick-current~.slick-slide:last-child {
-  transform: rotateX(-45deg) translateY(120px) translateZ(-120px);
+.slick-nav .slick-current~.slick-slide {
+  transform: none !important;
 }
 
 .testimonial-v01 {
