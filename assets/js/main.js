@@ -118,8 +118,10 @@
 
         if ($serviceItems.length === 0 || $descriptionBox.length === 0) return;
 
-        $serviceItems.on("mouseenter", function () {
-            const $item = $(this);
+        // Check if device is mobile/touch
+        const isMobile = window.matchMedia("(max-width: 767px)").matches || 'ontouchstart' in window;
+
+        const showDescription = function($item) {
             const description = $item.data("description");
             // Extract title text (everything after the // span)
             const title = $item.clone().children().remove().end().text().trim();
@@ -129,16 +131,71 @@
                 $descriptionText.text(description);
                 $descriptionBox.addClass("active");
             }
-        });
+        };
 
-        $serviceItems.on("mouseleave", function () {
+        const hideDescription = function() {
             $descriptionBox.removeClass("active");
-        });
+            $serviceItems.removeClass("active-item");
+        };
 
-        // Hide description when mouse leaves the service list area
-        $(".service-list").on("mouseleave", function () {
-            $descriptionBox.removeClass("active");
-        });
+        if (isMobile) {
+            // Mobile: Use click/touch events - clear click handling
+            $serviceItems.off("click").on("click", function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                const $item = $(this);
+                const $wasActive = $item.hasClass("active-item");
+                
+                // Remove active state from all items first
+                $serviceItems.removeClass("active-item");
+                
+                // Toggle: if clicking the same active item, hide description; otherwise show new one
+                if ($wasActive) {
+                    hideDescription();
+                } else {
+                    $item.addClass("active-item");
+                    showDescription($item);
+                    
+                    // Scroll description into view smoothly
+                    setTimeout(function() {
+                        $descriptionBox[0].scrollIntoView({ 
+                            behavior: 'smooth', 
+                            block: 'nearest' 
+                        });
+                    }, 100);
+                }
+            });
+
+            // Hide description when clicking outside service items or description
+            $(document).off("click.serviceDescription").on("click.serviceDescription", function(e) {
+                const $target = $(e.target);
+                const isClickInside = $target.closest(".service-item, .service-description, .service-list").length > 0;
+                
+                if (!isClickInside) {
+                    hideDescription();
+                }
+            });
+
+            // Prevent event bubbling on description box
+            $descriptionBox.on("click", function(e) {
+                e.stopPropagation();
+            });
+        } else {
+            // Desktop: Use hover events
+            $serviceItems.off("mouseenter mouseleave").on("mouseenter", function () {
+                const $item = $(this);
+                showDescription($item);
+            });
+
+            $serviceItems.on("mouseleave", function () {
+                hideDescription();
+            });
+
+            // Hide description when mouse leaves the service list area
+            $(".service-list").off("mouseleave").on("mouseleave", function () {
+                hideDescription();
+            });
+        }
     };
 
     // Dom Ready
