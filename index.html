@@ -1073,14 +1073,294 @@
                     </div>
                     <!-- Right Side - Contact Details -->
                     <div class="col-lg-6">
-                        <div class="contact-details-wrapper">
+                        <div class="contact-details-wrapper" style="padding: 0 15px;">
                             <h2 class="contact-heading">
                                 BOOK YOUR STUDIO NOW!
                             </h2>
-                            <div class="contact-description">
-                                <p>Ready for a shoot? Message us on WhatsApp at the number below, call us directly, or
-                                    drop by our studio in Al Qusais 2, Dubai. We’d love to meet you.</p>
+                            <div class="contact-description" style="margin-bottom: 30px;">
+                                <p style="font-size: 16px; color: rgba(255,255,255,0.7); line-height: 1.6;">Ready for a
+                                    shoot? Fill the booking form below, message us on WhatsApp, or call us directly.
+                                    We'd love to produce your next big idea.</p>
                             </div>
+
+                            <style>
+                                .booking-form {
+                                    width: 100%;
+                                    overflow: hidden;
+                                }
+
+                                .booking-form .form-control {
+                                    background: rgba(255, 255, 255, 0.03);
+                                    border: 1px solid rgba(255, 255, 255, 0.1);
+                                    color: #fff;
+                                    padding: 14px 18px;
+                                    border-radius: 4px;
+                                    transition: all 0.3s ease;
+                                    font-size: 15px;
+                                    width: 100%;
+                                    box-sizing: border-box;
+                                    height: auto;
+                                }
+
+                                .booking-form .form-control::placeholder {
+                                    color: rgba(255, 255, 255, 0.4);
+                                    opacity: 1;
+                                }
+
+                                .booking-form .form-control:focus {
+                                    background: rgba(255, 255, 255, 0.06);
+                                    border-color: #ff0000;
+                                    box-shadow: none;
+                                    color: #fff;
+                                    outline: none;
+                                }
+
+                                .booking-form select.form-control {
+                                    appearance: none;
+                                    -webkit-appearance: none;
+                                    -moz-appearance: none;
+                                    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+                                    background-repeat: no-repeat;
+                                    background-position: right 18px center;
+                                    background-size: 12px auto;
+                                    cursor: pointer;
+                                }
+
+                                .booking-form select option {
+                                    background: #111;
+                                    color: #fff;
+                                    padding: 10px;
+                                }
+
+                                .booking-form-submit {
+                                    background: #ff0000;
+                                    color: #fff;
+                                    border: none;
+                                    padding: 16px;
+                                    font-weight: 600;
+                                    letter-spacing: 2px;
+                                    text-transform: uppercase;
+                                    width: 100%;
+                                    border-radius: 4px;
+                                    transition: background 0.3s ease;
+                                    margin-top: 10px;
+                                    cursor: pointer;
+                                    box-sizing: border-box;
+                                }
+
+                                .booking-form-submit:hover {
+                                    background: #cc0000;
+                                }
+
+                                .contact-info-list-new {
+                                    margin-top: 40px;
+                                    padding-top: 30px;
+                                    border-top: 1px solid rgba(255, 255, 255, 0.1);
+                                }
+
+                                .form-group-mb {
+                                    margin-bottom: 20px;
+                                }
+                            </style>
+
+                            <!-- Booking Form -->
+                            <form id="bookingForm" class="booking-form">
+                                <div class="row" style="margin-left: -10px; margin-right: -10px;">
+                                    <div class="col-md-6 form-group-mb"
+                                        style="padding-left: 10px; padding-right: 10px;">
+                                        <input type="text" name="name" class="form-control" placeholder="Your Name"
+                                            required>
+                                    </div>
+                                    <div class="col-md-6 form-group-mb"
+                                        style="padding-left: 10px; padding-right: 10px;">
+                                        <input type="tel" name="phone" class="form-control" placeholder="Phone Number"
+                                            required>
+                                    </div>
+                                    <div class="col-md-12 form-group-mb"
+                                        style="padding-left: 10px; padding-right: 10px;">
+                                        <input type="email" name="email" class="form-control" placeholder="Your Email"
+                                            required>
+                                    </div>
+                                    <div class="col-md-12 form-group-mb"
+                                        style="padding-left: 10px; padding-right: 10px;">
+                                        <select name="service" class="form-control" required>
+                                            <option value="" disabled selected>Select Service / Enquiry Type</option>
+                                            <option value="Podcast Shoot">Podcast Shoot</option>
+                                            <option value="Product Photography">Product Photography</option>
+                                            <option value="Fashion / Portfolio">Fashion / Portfolio Shoot</option>
+                                            <option value="Ads and Films">Ads and Films</option>
+                                            <option value="Reels & Shorts">Reels & Shorts</option>
+                                            <option value="Event Coverage">Event & Concert Coverage</option>
+                                            <option value="General Enquiry">General Enquiry</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-12 form-group-mb"
+                                        style="padding-left: 10px; padding-right: 10px;">
+                                        <textarea name="message" class="form-control" rows="4"
+                                            placeholder="Tell us about your project..." required></textarea>
+                                    </div>
+                                    <div class="col-md-12" style="padding-left: 10px; padding-right: 10px;">
+                                        <button type="submit" id="submitBtn" class="booking-form-submit">
+                                            SEND ENQUIRY
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <script>
+                                document.getElementById("bookingForm").addEventListener("submit", async function (e) {
+                                    e.preventDefault();
+
+                                    const form = e.target;
+                                    const submitBtn = document.getElementById("submitBtn");
+                                    const originalBtnText = submitBtn.innerText;
+
+                                    submitBtn.innerText = "SENDING...";
+                                    submitBtn.disabled = true;
+
+                                    const SCRIPT_URL = "https://formsubmit.co/ajax/manuahnas@gmail.com";
+                                    const formData = new FormData(form);
+
+                                    const payload = {
+                                        "Full Name": formData.get("name"),
+                                        "Contact Number": formData.get("phone"),
+                                        "Email": formData.get("email"),
+                                        "Service Type": formData.get("service"),
+                                        "Message Details": formData.get("message") || "No message provided",
+                                        _subject: "New Studio Booking Enquiry",
+                                        _captcha: "false",
+                                        _template: "table",
+                                        _remove_branding: "true"
+                                    };
+
+                                    try {
+                                        const response = await fetch(SCRIPT_URL, {
+                                            method: "POST",
+                                            headers: {
+                                                "Content-Type": "application/json",
+                                                "Accept": "application/json"
+                                            },
+                                            body: JSON.stringify(payload),
+                                        });
+
+                                        const result = await response.json();
+
+                                        if (response.ok && (result.success === "true" || result.success === true)) {
+                                            document.getElementById('successModal').style.display = 'flex';
+                                            form.reset();
+                                        } else {
+                                            // FormSubmit returns 200 OK even for some failures, so we throw the message
+                                            throw new Error(result.message || "Submission failed");
+                                        }
+                                    } catch (error) {
+                                        console.error("Error!", error);
+                                        // Specific alert for the local file:// protocol error from FormSubmit
+                                        if (error.message && error.message.includes("web server")) {
+                                            alert("Note: FormSubmit does not work when opening HTML files directly (file://). Please push the code to GitHub Pages or use a local server like 'Live Server' to test the form.");
+                                        } else {
+                                            alert("Submission failed: " + error.message);
+                                        }
+                                    } finally {
+                                        submitBtn.innerText = originalBtnText;
+                                        submitBtn.disabled = false;
+                                    }
+                                });
+                            </script>
+
+                            <!-- Success Modal -->
+                            <div id="successModal" class="booking-modal-overlay">
+                                <div class="booking-modal-content">
+                                    <div class="booking-modal-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                            viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                        </svg>
+                                    </div>
+                                    <h3 class="booking-modal-title">Enquiry Sent Successfully!</h3>
+                                    <p class="booking-modal-text">Thank you for getting in touch. We have received your
+                                        enquiry and will get back to you shortly.</p>
+                                    <button type="button" class="booking-modal-close-btn"
+                                        onclick="document.getElementById('successModal').style.display='none'">CLOSE</button>
+                                </div>
+                            </div>
+
+                            <style>
+                                .booking-modal-overlay {
+                                    display: none;
+                                    position: fixed;
+                                    top: 0;
+                                    left: 0;
+                                    right: 0;
+                                    bottom: 0;
+                                    background: rgba(0, 0, 0, 0.8);
+                                    z-index: 9999;
+                                    align-items: center;
+                                    justify-content: center;
+                                    backdrop-filter: blur(4px);
+                                }
+
+                                .booking-modal-content {
+                                    background: #1a1a1a;
+                                    border: 1px solid rgba(255, 255, 255, 0.1);
+                                    padding: 40px;
+                                    border-radius: 12px;
+                                    text-align: center;
+                                    max-width: 400px;
+                                    width: 90%;
+                                    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+                                    animation: modalPopIn 0.3s ease-out;
+                                }
+
+                                @keyframes modalPopIn {
+                                    0% {
+                                        transform: scale(0.9);
+                                        opacity: 0;
+                                    }
+
+                                    100% {
+                                        transform: scale(1);
+                                        opacity: 1;
+                                    }
+                                }
+
+                                .booking-modal-icon {
+                                    margin-bottom: 20px;
+                                }
+
+                                .booking-modal-title {
+                                    color: #fff;
+                                    font-size: 24px;
+                                    margin-bottom: 10px;
+                                    font-weight: 600;
+                                }
+
+                                .booking-modal-text {
+                                    color: rgba(255, 255, 255, 0.7);
+                                    font-size: 15px;
+                                    margin-bottom: 30px;
+                                    line-height: 1.5;
+                                }
+
+                                .booking-modal-close-btn {
+                                    background: #ff0000;
+                                    color: #fff;
+                                    border: none;
+                                    padding: 12px 30px;
+                                    border-radius: 4px;
+                                    font-weight: 600;
+                                    letter-spacing: 1px;
+                                    cursor: pointer;
+                                    transition: background 0.3s;
+                                }
+
+                                .booking-modal-close-btn:hover {
+                                    background: #cc0000;
+                                }
+                            </style>
+                            <!-- /Success Modal -->
+
                             <div class="contact-info-list-new">
                                 <div class="contact-info-item-new">
                                     <div class="contact-icon">
