@@ -1167,6 +1167,7 @@ h6,
 
 .text-line-clamp-1 {
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   -webkit-box-orient: vertical;
   display: -webkit-box !important;
   overflow: hidden;
@@ -1174,6 +1175,7 @@ h6,
 
 .text-line-clamp-2 {
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   display: -webkit-box;
   overflow: hidden;
@@ -1181,6 +1183,7 @@ h6,
 
 .text-line-clamp-3 {
   -webkit-line-clamp: 3 !important;
+  line-clamp: 3 !important;
   -webkit-box-orient: vertical;
   display: -webkit-box;
   overflow: hidden;
@@ -2137,6 +2140,7 @@ header.header-sticky {
 
 .article-blog .infor_name {
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   -webkit-box-orient: vertical;
   display: -webkit-box !important;
   overflow: hidden;
@@ -2229,6 +2233,7 @@ header.header-sticky {
 
 .relatest-post-item .title {
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   -webkit-box-orient: vertical;
   display: -webkit-box;
   overflow: hidden;
@@ -3810,6 +3815,7 @@ select option {
   cursor: pointer;
   outline: 0;
   -webkit-appearance: none;
+  appearance: none;
   width: 24px;
   height: 24px;
   min-width: 24px;
@@ -4311,6 +4317,7 @@ button.animate-btn::after,
   background-size: 200% 100%;
   background-position: right;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: background-position 0.3s linear;
   cursor: pointer;
@@ -4350,6 +4357,7 @@ button.animate-btn::after,
   background-size: 200% 100%;
   background-position: right;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: background-position 0.3s linear;
 }
@@ -5109,9 +5117,7 @@ button.animate-btn::after,
   }
 }
 
-.section-brand {
-  /*-- min, between, max --*/
-}
+/* .section-brand -- min, between, max -- placeholder removed (empty ruleset) */
 
 .section-brand .tf-grid-layout {
   gap: 0;
@@ -7010,9 +7016,7 @@ button.animate-btn::after,
   object-fit: cover;
 }
 
-.wg-process .img-icon {
-  /* margin-bottom: 30px; */
-}
+/* .wg-process .img-icon -- margin-bottom: 30px removed (empty ruleset) */
 
 .wg-process .title {
   margin-bottom: 24px;
@@ -7516,9 +7520,7 @@ button.animate-btn::after,
   background-color: transparent;
   position: absolute;
   -webkit-text-stroke: 0.8px rgba(0, 0, 0, 0.9);
-  text-stroke: 0.8px rgba(0, 0, 0, 0.9);
   -webkit-text-stroke: 2px rgba(0, 0, 0, 0.95);
-  text-stroke: 2px rgba(0, 0, 0, 0.95);
   left: 0;
   width: 100%;
   height: 100%;
@@ -7979,8 +7981,10 @@ button.animate-btn::after,
   border-radius: 5px;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .nice-select .list::-webkit-scrollbar-thumb {
@@ -7990,8 +7994,10 @@ button.animate-btn::after,
   border-radius: 5px;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .nice-select .list::-webkit-scrollbar {
@@ -8003,8 +8009,10 @@ button.animate-btn::after,
   border-radius: 5px;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .nice-select .list:hover .option:not(:hover) {
